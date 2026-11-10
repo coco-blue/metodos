@@ -1,0 +1,80 @@
+
+/* DISEÑO GENERAL */
+body.practica {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8edff, #f5eaff);
+    color: #303451;
+}
+
+/* TITULOS */
+.practica h1 {
+    text-align: center;
+    color: #51468c;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* PARRAFOS */
+.practica p {
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 5px solid #8174c9;
+    max-width: 600px;
+    margin: 15px auto;
+    box-shadow: 0 3px 10px rgba(50, 40, 100, 0.08);
+}
+
+/* CONTENEDOR DE IMAGEN */
+.practica #imagen {
+    text-align: center;
+    margin: 20px;
+}
+
+.practica #imagen img {
+    max-width: 180px;
+    height: auto;
+}
+
+/* BOTONES */
+.practica button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7164b5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+.practica button:hover {
+    background-color: #51468c;
+    transform: scale(1.04);
+}
+
+/* TEXTO DESTACADO */
+.practica .destacado {
+    color: #c03965;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* BOTON DESHABILITADO */
+.practica button:disabled {
+    background-color: #a9a4c2;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ESPACIADO */
+.practica h1:not(:first-child) {
+    border-top: 2px solid #d5ccef;
+    padding-top: 25px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="practica">
+    <h1>innerHTML</h1>
+
+    <p id="mensaje">Hola mundo</p>
+    <div id="imagen"></div>
+    <script>
+        document.getElementById("mensaje").innerHTML=
+        "Bienvenido";
+        document.getElementById("imagen").innerHTML=
+        '<img src="logo.png" alt=logo >';
+    </script>
+
+    <h1>document.getElementById()</h1>
+
+    <p id="aviso">Mensaje inicial</p>
+    <button id="btn">haz clic</button>
+    <script>
+        var elemento=document.getElementById("aviso");
+        elemento.textContent ="Hola estudiantes";
+        document.getElementById("btn").style.backgroundColor=
+        "lightblue";
+    </script>
+
+    <h1>querySelector()</h1>
+
+    <p class="destacado">Texto importante</p>
+    <button class="btn">Enviar</button>
+    <script>
+        document.querySelector(".destacado").style.color="red";
+        document.querySelector(".btn").disabled=true;
+    </script>
+</body>
+</html>
